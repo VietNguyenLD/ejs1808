@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% const a = 'Nguyen Quoc Viet'; %>
+    <% const isAdmin = true; %>
+    <% const arrSubject = ['MongoDB', 'Angola', 'Python']; %>
+   
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <h1><%= username %></h1>
+      <% if( isAdmin){ %>
+          <p>Day la trang chu</p>
+      <% } else { %>
+          <p>Quay tro lai</p>
+      <% } %>
+      <% arrSubject.forEach(subject => { %>
+        <h3><%= subject %></h3>
+      <% }); %>
+
+      <% arrPeople.forEach(person => { %>
+          <h3>Ten: <%= person.name %></h3>
+          <p>Tuoi: <%= person.age %></p>
+      <% }); %>
+    </body>
+</html>

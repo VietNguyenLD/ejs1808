@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/VietNguyenLD/ejs1808#readme",
   "dependencies": {
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "reload": "^3.0.3"
   }
 }
