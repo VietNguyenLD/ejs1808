@@ -2,7 +2,6 @@
 <html lang="en">
     <% const a = 'Nguyen Quoc Viet'; %>
     <% const isAdmin = true; %>
-    <% const arrSubject = ['MongoDB', 'Angola', 'Python']; %>
    
     <head>
         <title></title>
@@ -22,8 +21,7 @@
       <% }); %>
 
       <% arrPeople.forEach(person => { %>
-          <h3>Ten: <%= person.name %></h3>
-          <p>Tuoi: <%= person.age %></p>
+        <%- include('../partials/personRow.ejs', { person : person })%>
       <% }); %>
     </body>
 </html>
